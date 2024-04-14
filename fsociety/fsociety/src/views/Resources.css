@@ -1,0 +1,24 @@
+.resources-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .resources-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .resource-item {
+    margin-bottom: 10px;
+  }
+  
+  .resource-item a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .resource-item a:hover {
+    color: #4CAF50;
+  }

@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One&display=swap');
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    background-image: url('../pictures/BackGround.jpg'); 
+    background-size: 100%, auto;
+    background-position: center;
+
+    text-align: center;
+    background-repeat: no-repeat;
+}
+
+.profile-card {
+    background: rgba(255, 255, 255, 0.95); /* Slightly transparent to let the background show through */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 30%; /* Ensures it fits within the container properly */
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+.profile-header {
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 2.4em;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.profile-form {
+    margin-bottom: 20px;
+    animation: fadeIn 0.8s both;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333; /* Improved visibility against light backgrounds */
+    transition: color 0.3s ease;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="file"] {
+    width: 92%;
+    padding: 12px 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.2s ease-in-out;
+    background: rgba(255, 255, 255, 0.8);
+    
+    /* Ensuring text does not overflow the input's boundaries */
+    overflow: hidden; /* Prevents text from spilling out */
+    text-overflow: ellipsis; /* Adds an ellipsis to indicate clipped text */
+    white-space: nowrap; /* Keeps the text on a single line */
+}
+
+
+.form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 2px 8px rgba(0, 115, 230, 0.2);
+}
+
+.profile-form-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1em;
+    transition: background-color 0.4s, transform 0.2s;
+}
+
+.profile-form-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.profile-picture-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #ddd;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.profile-picture:hover {
+    border-color: #007bff;
+}
+
+.picture-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.upload-button, .remove-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.upload-button {
+    background-color: #28a745;
+}
+
+.remove-button {
+    background-color: #dc3545;
+}
+
+.upload-button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.remove-button:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-container,
+    .profile-card {
+        padding: 10px;
+    }
+    .profile-header {
+        font-size: 1.8em; /* Adjusted for better readability on smaller devices */
+    }
+}

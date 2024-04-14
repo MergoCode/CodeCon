@@ -1,0 +1,23 @@
+.hello {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.navbar-bg-color{
+    background-color: darkblue;
+    color: white;
+}
+.navbar .navbar-nav .nav-link {
+    color: white !important;
+}
+.navbar-brand {
+color:white !important;
+}
+.item h2{
+ color: darkblue;
+
+}
+.item:hover{
+color: green;
+}
+

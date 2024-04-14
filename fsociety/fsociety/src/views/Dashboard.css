@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.dashboard-background {
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    background-image: url('../pictures/BackGround.jpg'); 
+    background-size: 100%, auto;
+    background-position: center;
+}
+
+.dashboard-container {
+    flex: auto;
+    align-items: center;
+    max-width: 960px;
+    margin: 20px;
+    padding: 20px;
+    background: linear-gradient(145deg, rgba(109, 177, 255, 0.85), rgba(255, 255, 255, 0.85));
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    overflow: hidden; /* Ensures no spillover of the content */
+}
+
+.dashboard-header {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2C3E50;
+    margin-bottom: 30px;
+}
+
+.dashboard-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 30%;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+    font-size: 22px;
+    color: #3498DB;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.card button {
+    background-color: #3498DB;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #2980B9;
+}
+
+@media (max-width: 768px) {
+    .dashboard-container,
+    .card {
+        width: 100%;  /* Ensure cards and container fit mobile screens properly */
+    }
+}

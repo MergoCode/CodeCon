@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="/fsociety/fsociety/src/views/Dashboard.css">
+
+</head>
+<body>
+
+<h1>Hello world!</h1>
+<button><a href="/">Back</a></button>
+<br><br><br>
+<form action="/create-request" method="post">
+    <label for="Request-title">Введіть назву запиту:</label><br><br>
+    <input type="text" id="Request-title" name="Request-title"><br><br>
+    <label for="Request-description">Введіть опис запиту(необов'язково):</label><br><br>
+    <textarea name="Request-description" style="height: 150px; resize: vertical;" id="Request-description"></textarea><br><br>
+    <select name="Request-category" id="Request-category"><br><br>
+        <option value="Financial" selected>Financial</option>
+        <option value="Material">Material</option>
+        <option value="Food">Food</option>
+    </select>
+    <input type="submit" value="ADD">
+</form>
+<button><a href="/profile-page">To your profile:</a></button>
+<div id="root"></div>
+<script src="/fsociety/fsociety/src/scripts/main.js"></script>
+</body>
+
+</html>

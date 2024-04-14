@@ -1,0 +1,92 @@
+/* RequestCreate.css */
+body{
+background-color: gray;}
+.create-request {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+.input-title,
+.input-category,
+.textarea-description {
+  width: 96%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  transition: border-color 0.3s;
+}
+
+.input-title:focus,
+.input-category:focus,
+.textarea-description:focus {
+  border-color: #007bff;
+}
+
+.textarea-description {
+  resize: vertical;
+}
+
+.create-button {
+  text-align: center;
+}
+
+.create-button button {
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.create-button button:hover {
+  background-color: #0056b3;
+}
+
+.create-button button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.martop-2{
+margin-top: 50px;
+}
+
+.dropdown-box{
+margin-left: 10px;
+width: 25%;
+padding-top:5px;
+padding-bottom:5px;
+padding-left: 10px;
+padding-right: 5px;
+}
+
+.d-flex{
+display: flex;
+
+}

@@ -1,0 +1,162 @@
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  
+  .login-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .login-form {
+    margin-bottom: 20px;
+  }
+  
+  .login-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .login-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .login-form button:hover {
+    background-color: #45a049;
+  }
+  .login-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+    .login-container h2 {
+        text-align: center;
+    }
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+    .form-group input {
+        width: 70%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+.checkbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+}
+
+   
+    .checkbox input {
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+.checkmark {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: background-color 0.2s;
+}
+
+
+.checkbox input:checked ~ .checkmark {
+    background-color: #4CAF50;
+}
+
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    border-radius: 50%;
+}
+
+
+.checkbox input:checked ~ .checkmark:after {
+    display: block;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    margin-left: -5px;
+    margin-top: -5px;
+    background: white;
+    border-radius: 50%;
+}
+
+.checkbox:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+.backgr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    background-image: url('../pictures/BackGround.jpg'); 
+    background-size: 100%, auto;
+    background-position: center;
+
+    text-align: center;
+    background-repeat: no-repeat;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease; /* Плавний перехід */
+}
+.btn:hover {
+    background-color: #45a049; /* Темнозелений колір */
+}
+.links {
+    text-align: center;
+    margin-top: 15px;
+}
+
+    .links a {
+        text-decoration: none;
+        color: #333;
+    }
